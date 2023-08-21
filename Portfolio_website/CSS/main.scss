@@ -1,0 +1,976 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans:wght@700&family=Work+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(143, 213, 191) 14%,
+    rgb(242, 245, 185) 52%,
+    rgb(96, 164, 149) 84%
+  );
+  overflow-x: hidden;
+}
+.border {
+  border: 1px solid black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73%);
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 13%,
+    rgba(56, 52, 52, 1) 95%
+  );
+}
+.picture {
+  height: 100vh;
+  background-image: url("Ankitaa.png");
+  background-size: 45%;
+  background-position: 800px -270px;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  filter: drop-shadow(20px 20px 20px rgba(246, 225, 163, 0.712));
+}
+nav {
+  position: fixed;
+  margin: 40px 140px;
+  display: flex;
+  width: 80vw;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  position: fixed;
+  margin-left: 70px;
+  word-spacing: 8px;
+  font-size: 48px;
+  color: rgb(165, 255, 255);
+}
+.name:hover {
+  color: rgb(255, 221, 119);
+}
+.links {
+  position: fixed;
+  margin-left: 780px;
+}
+.links ul li {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  margin: 20px 25px;
+  transition: 1s;
+}
+.links ul li a {
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: 0.5s ease;
+}
+.links ul li a:hover {
+  background-color: rgb(9, 13, 13);
+  color: rgb(250, 214, 107);
+}
+
+.skill {
+  overflow-y: hidden;
+  position: relative;
+  left: 200px;
+  top: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  width: 40%;
+}
+.skill h1 {
+  font-size: 70px;
+  color: white;
+  letter-spacing: 6px;
+}
+span {
+  color: rgb(255, 221, 119);
+}
+span:hover {
+  color: rgb(158, 247, 247);
+}
+.skill h2 {
+  font-size: 35px;
+  color: rgb(220, 255, 255);
+}
+.skill p {
+  margin-right: 30%;
+  padding-top: 30px;
+  letter-spacing: 4px;
+  font-size: 17px;
+  color: white;
+}
+.button {
+  position: relative;
+  top: 45px;
+  left: 115px;
+  padding: 17px 25px 17px 25px;
+  border: 1px solid rgb(255, 221, 119);
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(204, 244, 244);
+  background-color: black;
+  transition: 0.6s ease;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 223, 126);
+  color: black;
+}
+
+.ids {
+  margin-top: 90px;
+  margin-left: 140px;
+}
+.ids a {
+  padding: 5px;
+}
+
+.main-skills {
+  display: flex;
+  border: 1px solid transparent;
+  width: 100vw;
+  height: 50vh;
+}
+
+.skill-pro {
+  position: relative;
+  top: 2rem;
+  border: 1px solid transparent;
+  width: 50vw;
+  height: 45.5vh;
+}
+
+.skill-pro h2 {
+  font-size: 35px;
+  color: rgb(13, 21, 21);
+  font-weight: 600;
+  border: 1px solid transparent;
+  height: 8vh;
+  width: 40vw;
+  margin-left: 2rem;
+}
+
+.skills-content {
+  border: 1px solid transparent;
+  width: 50vw;
+  height: 37vh;
+}
+
+.skill-1 {
+  position: relative;
+  left: 2rem;
+}
+
+.skill-1 h3 {
+  position: relative;
+  left: 10px;
+  font-size: 28px;
+  color: #132f2d;
+}
+
+#percent1 {
+  margin-top: 6px;
+  border: 3px solid rgb(17, 34, 52);
+  width: 25rem;
+  border-radius: 20px;
+}
+
+#percent1 p {
+  border: 1px solid rgb(40, 72, 103);
+  border-radius: 20px;
+  width: 15rem;
+  background-color: rgb(3, 67, 95);
+  color: rgb(249, 255, 186);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#percent1 p span {
+  padding-left: 6rem;
+}
+
+.skill-2 {
+  position: relative;
+  left: 2rem;
+  top: 2rem;
+}
+
+.skill-2 h3 {
+  position: relative;
+  left: 10px;
+  font-size: 28px;
+  color: #132f2d;
+}
+
+#percent2 {
+  margin-top: 6px;
+  border: 3px solid rgb(17, 34, 52);
+  width: 25rem;
+  border-radius: 20px;
+}
+
+#percent2 p {
+  border: 1px solid rgb(40, 72, 103);
+  border-radius: 20px;
+  width: 17rem;
+  background-color: rgb(3, 67, 95);
+  color: rgb(249, 255, 186);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#percent2 p span {
+  padding-left: 7rem;
+}
+
+.skill-3 {
+  position: relative;
+  left: 2rem;
+  top: 4rem;
+}
+
+.skill-3 h3 {
+  position: relative;
+  left: 10px;
+  font-size: 28px;
+  color: #132f2d;
+}
+
+#percent3 {
+  margin-top: 6px;
+  border: 3px solid rgb(17, 34, 52);
+  width: 25rem;
+  border-radius: 20px;
+}
+
+#percent3 p {
+  border: 1px solid rgb(40, 72, 103);
+  border-radius: 20px;
+  width: 17rem;
+  background-color: rgb(3, 67, 95);
+  color: rgb(249, 255, 186);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#percent3 p span {
+  padding-left: 7rem;
+}
+
+.soft-skill-pro {
+  position: relative;
+  top: 2rem;
+  border: 1px solid transparent;
+  width: 50vw;
+  height: 45.5vh;
+}
+
+.soft-skill-pro h2 {
+  font-size: 35px;
+  color: rgb(13, 21, 21);
+  font-weight: 600;
+  border: 1px solid transparent;
+  height: 8vh;
+  width: 40vw;
+  margin-left: 2rem;
+}
+
+.soft-skills-content {
+  border: 1px solid transparent;
+  width: 50vw;
+  height: 37vh;
+}
+
+.soft-skill-1 {
+  position: relative;
+  left: 2rem;
+}
+
+.soft-skill-1 h3 {
+  position: relative;
+  left: 10px;
+  font-size: 28px;
+  color: #132f2d;
+}
+
+#sskill-percent1 {
+  margin-top: 8px;
+  border: 3px solid rgb(17, 34, 52);
+  width: 25rem;
+  border-radius: 20px;
+}
+
+#sskill-percent1 p {
+  border: 1px solid rgb(40, 72, 103);
+  border-radius: 20px;
+  width: 17rem;
+  background-color: rgb(3, 67, 95);
+  color: rgb(249, 255, 186);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#sskill-percent1 p span {
+  padding-left: 7rem;
+}
+
+.soft-skill-2 {
+  position: relative;
+  left: 2rem;
+  top: 2rem;
+}
+
+.soft-skill-2 h3 {
+  position: relative;
+  left: 10px;
+  font-size: 28px;
+  color: #132f2d;
+}
+
+#sskill-percent2 {
+  margin-top: 7px;
+  border: 3px solid rgb(17, 34, 52);
+  width: 25rem;
+  border-radius: 20px;
+}
+
+#sskill-percent2 p {
+  border: 1px solid rgb(40, 72, 103);
+  border-radius: 20px;
+  width: 15rem;
+  background-color: rgb(3, 67, 95);
+  color: rgb(249, 255, 186);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#sskill-percent2 p span {
+  padding-left: 6rem;
+}
+
+.soft-skill-3 {
+  position: relative;
+  left: 2rem;
+  top: 4rem;
+}
+
+.soft-skill-3 h3 {
+  position: relative;
+  left: 10px;
+  font-size: 28px;
+  color: #132f2d;
+}
+
+#sskill-percent3 {
+  margin-top: 7px;
+  border: 3px solid rgb(17, 34, 52);
+  width: 25rem;
+  border-radius: 20px;
+}
+
+#sskill-percent3 p {
+  border: 1px solid rgb(40, 72, 103);
+  border-radius: 20px;
+  width: 17rem;
+  background-color: rgb(3, 67, 95);
+  color: rgb(249, 255, 186);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#sskill-percent3 p span {
+  padding-left: 7rem;
+}
+
+.achievements{
+    border: 2px solid transparent;
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    top: 3rem;
+}
+
+.achievements h1{
+    border: 2px solid transparent;
+    background-color: #fff3e1 ;
+    color: rgb(13, 21, 21);
+    font-size: 45px;
+    padding-left: 35rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Work Sans", sans-serif;
+}
+
+.achievements h1:hover {
+    background-color: black;
+    color: rgb(170, 250, 250);
+  }
+
+  .certificates{
+    display: flex;
+    border: 1px solid transparent;
+    height:80vh;
+    width: 100vw;
+}
+
+.certi1{
+  border: 2px solid transparent;
+  height:  35rem;
+  width: 28rem;
+  position: relative;
+  top: 1.5rem;
+  left: 2rem;
+}
+
+.certi1 h2{
+    border: 2px solid transparent;
+    width: 28rem;
+    color: rgb(13, 21, 21);
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Work Sans", sans-serif; 
+}
+
+.certi1 h2:hover{
+  color: rgb(129, 232, 224);
+  background-color: #122322;
+}
+
+.certi1 img{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 28rem;
+    height: 20rem;
+    position: relative;
+    top: 5px;
+}
+
+.certi1 p{
+  position: relative;
+  top: 10px;
+  border: 1px solid transparent;
+  width: 28rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;  
+  font-size: 15px;
+  line-height: 1.3rem;
+}
+
+.certi2{
+  border: 2px solid transparent;
+  height:  35rem;
+  width: 28rem;
+  position: relative;
+  top: 1.5rem;
+  left: 5rem;
+}
+
+.certi2 h2{
+    border: 2px solid transparent;
+    width: 28rem;
+    color: rgb(13, 21, 21);
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Work Sans", sans-serif; 
+}
+
+.certi2 h2:hover{
+  color: rgb(129, 232, 224);
+  background-color: #122322;
+}
+
+.certi2 img{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 28rem;
+    height: 20rem;
+    position: relative;
+    top: 5px;
+}
+
+.certi2 p{
+  position: relative;
+  top: 10px;
+  border: 1px solid transparent;
+  width: 28rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;  
+  font-size: 15px;
+  line-height: 1.3rem;
+}
+
+.certi3{
+  border: 2px solid transparent;
+  height:  35rem;
+  width: 28rem;
+  position: relative;
+  top: 1.5rem;
+  left: 8rem;
+}
+
+.certi3 h2{
+    border: 2px solid transparent;
+    width: 28rem;
+    color: rgb(13, 21, 21);
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Work Sans", sans-serif; 
+}
+
+.certi3 h2:hover{
+  color: rgb(129, 232, 224);
+  background-color: #122322;
+}
+
+.certi3 img{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 28rem;
+    height: 20rem;
+    position: relative;
+    top: 5px;
+}
+
+.certi3 p{
+  position: relative;
+  top: 10px;
+  border: 1px solid transparent;
+  width: 28rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;  
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.border1-footer {
+  position: relative;
+  top: 45rem;
+  clip-path: polygon(0 0, 81% 35%, 100% 100%, 0% 100%);
+  border: 1px solid black;
+  height: 50vh;
+  background: radial-gradient(circle, rgb(108, 113, 77) 10%, rgb(5, 5, 5) 95%);
+}
+
+.site-footer {
+  color: #a7e0dc;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  position: relative;
+  top: 7rem;
+  left: 52rem;
+  border: 8px outset rgb(137, 207, 208);
+  border-radius: 50%;
+  width: 12vw;
+  height: auto;
+}
+
+.footer-center-content {
+  justify-content: left;
+  position: relative;
+  top: 3rem;
+  right: 9rem;
+}
+
+.footer-center-content h1 {
+  font-size: 32px;
+  color: rgb(229, 250, 250);
+  position: relative;
+  right: 20rem;
+}
+
+.footer-center-content h3 {
+  font-size: 13px;
+  color: rgb(194, 204, 204);
+  position: relative;
+  right: 11.7rem;
+  top: 6.5px;
+  letter-spacing: 4px;
+}
+
+.footer-center-content p {
+  font-size: 16px;
+  color: rgb(231, 249, 249);
+  position: relative;
+  right: 22.8rem;
+  top: 18px;
+}
+
+.footer-center-content h2 {
+  font-size: 20px;
+  color: rgb(231, 249, 249);
+  position: relative;
+  right: 20.2rem;
+  top: 25px;
+}
+
+.footer-ids {
+  position: relative;
+  top: 11.4rem;
+  right: 65.4rem;
+}
+
+.footer-ids a {
+  padding: 5px;
+}
+
+.copyright {
+  position: relative;
+  top: 6.5rem;
+  right: 28.6rem;
+  font-size: 14px;
+}
+
+.about_me {
+  overflow-y: hidden;
+  padding-top: 280px;
+  padding-left: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  width: 40%;
+}
+.about_me h1 {
+  font-size: 90px;
+  color: white;
+  letter-spacing: 6px;
+}
+
+#about {
+  position: relative;
+  top: 60px;
+  border: 1px solid transparent;
+  height: 80vh;
+  width: 100vw;
+  border-radius: 30px;
+}
+.headings {
+  height: 100px;
+  padding-top: 45px;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  background-color: rgb(243, 235, 208);
+}
+.headings:hover {
+  background-color: black;
+  color: rgb(170, 250, 250);
+}
+
+#pic {
+  position: relative;
+  top: 50px;
+  display: flex;
+}
+#pic img {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  width: auto;
+  height: 40vh;
+  border: 8px outset rgb(121, 107, 33);
+  border-radius: 50%;
+}
+#intro {
+  position: relative;
+  left: 260px;
+}
+#intro h2 {
+  justify-content: center;
+  text-align: justify;
+  font-size: 40px;
+  color: rgb(6, 87, 97);
+}
+#intro p {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  word-spacing: 6px;
+  margin-right: 35rem;
+}
+
+.border1-footer-about {
+  position: relative;
+  top: 14rem;
+  clip-path: polygon(0 0, 81% 35%, 100% 100%, 0% 100%);
+  border: 1px solid black;
+  height: 50vh;
+  background: radial-gradient(circle, rgb(108, 113, 77) 10%, rgb(5, 5, 5) 95%);
+}
+
+// PORJECTS Section
+.projects {
+  overflow-y: hidden;
+  padding-top: 280px;
+  padding-left: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  width: 40%;
+}
+.projects h1 {
+  font-size: 90px;
+  color: white;
+  letter-spacing: 6px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.p1 {
+  position: relative;
+  bottom: 20rem;
+  border: 1px solid transparent;
+  height: 60vh;
+  width: 100vw;
+}
+
+.p1 h1 {
+  color: rgb(13, 21, 21);
+  font-size: 55px;
+  align-items: center;
+  padding-left: 80px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+.p1 h1:hover {
+  background-color: black;
+  color: rgb(170, 250, 250);
+}
+
+.attend {
+  position: relative;
+  top: 20px;
+  border: 1px solid transparent;
+  height: 48.6vh;
+  display: flex;
+}
+
+#pr1 {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  width: 30vw;
+  margin-left: 75px;
+}
+
+.attend p {
+  border: 1px solid transparent;
+  width: 60vw;
+  font-size: 16px;
+  padding-right: 24rem;
+  padding-left: 9rem;
+  padding-top: 1.5rem;
+  line-height: 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.p2 {
+  position: relative;
+  bottom: 15rem;
+  border: 1px solid transparent;
+  height: 60vh;
+  width: 100vw;
+}
+
+.p2 h1 {
+  color: rgb(13, 21, 21);
+  font-size: 55px;
+  align-items: center;
+  padding-left: 80px;
+}
+.p2 h1:hover {
+  background-color: black;
+  color: rgb(170, 250, 250);
+}
+
+.proshop {
+  position: relative;
+  top: 20px;
+  border: 1px solid transparent;
+  height: 48.6vh;
+  display: flex;
+}
+
+#pr2 {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  width: 30vw;
+  margin-left: 75px;
+}
+
+.proshop p {
+  border: 1px solid transparent;
+  width: 60vw;
+  font-size: 16px;
+  padding-right: 24rem;
+  padding-left: 9rem;
+  padding-top: 2rem;
+  line-height: 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.p3 {
+  position: relative;
+  bottom: 10rem;
+  border: 1px solid transparent;
+  height: 40vh;
+  width: 100vw;
+}
+
+.p3 h1 {
+  color: rgb(13, 21, 21);
+  font-size: 55px;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.p3 h1:hover {
+  background-color: black;
+  color: rgb(170, 250, 250);
+}
+
+.flix {
+  position: relative;
+  top: 20px;
+  border: 1px solid transparent;
+  height: 48vh;
+  display: flex;
+}
+
+#pr3 {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  width: 30vw;
+  margin-left: 75px;
+}
+
+.flix p {
+  border: 1px solid transparent;
+  width: 60vw;
+  font-size: 16px;
+  padding-top: 2rem;
+  line-height: 25px;
+  padding-right: 24rem;
+  padding-left: 9rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.border1-footer-projects {
+  position: relative;
+  top: 5rem;
+  clip-path: polygon(0 0, 81% 35%, 100% 100%, 0% 100%);
+  border: 1px solid black;
+  height: 50vh;
+  background: radial-gradient(circle, rgb(108, 113, 77) 10%, rgb(5, 5, 5) 95%);
+}
+
+// CONTACT*******
+.cont {
+  overflow-y: hidden;
+  padding-top: 280px;
+  padding-left: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  width: 40%;
+}
+.cont h1 {
+  font-size: 90px;
+  color: white;
+  letter-spacing: 6px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  color: rgb(13, 21, 21);
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container h1:hover {
+  background-color: rgb(61, 62, 62);
+  color: rgb(147, 240, 240);
+}
+
+.contact-info {
+  position: relative;
+  right: 4rem;
+  border: 1px solid transparent;
+  padding: 20px;
+  border-radius: 5px;
+  height: 15rem;
+  width: 40rem;
+  background: radial-gradient(
+    circle,
+    rgb(124, 130, 89) 10%,
+    rgb(118, 181, 168) 95%
+  );
+  box-shadow: 0 2px 4px rgba(59, 58, 58, 0.1);
+  opacity: 0.9;
+}
+
+.contact-info p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.border1-footer-contact {
+  position: relative;
+  top: 5rem;
+  clip-path: polygon(0 0, 81% 35%, 100% 100%, 0% 100%);
+  border: 1px solid black;
+  height: 50vh;
+  background: radial-gradient(circle, rgb(108, 113, 77) 10%, rgb(5, 5, 5) 95%);
+}
